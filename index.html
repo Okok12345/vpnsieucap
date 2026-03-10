@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VPN Siêu Cấp</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;
+}
+
+body{
+background:radial-gradient(circle at top,#1a0d3d,#05030b);
+color:white;
+padding:20px;
+}
+
+.container{
+max-width:520px;
+margin:auto;
+}
+
+.header{
+text-align:center;
+margin-bottom:25px;
+}
+
+.logo{
+display:inline-block;
+padding:10px 22px;
+border-radius:40px;
+background:linear-gradient(90deg,#6a5cff,#9d7bff);
+font-weight:bold;
+}
+
+.header h1{
+margin-top:14px;
+font-size:28px;
+}
+
+.header p{
+color:#aaa;
+font-size:14px;
+}
+
+.tabs{
+display:flex;
+background:#111024;
+border-radius:40px;
+padding:6px;
+margin-top:20px;
+}
+
+.tab{
+flex:1;
+padding:12px;
+text-align:center;
+border-radius:30px;
+color:#aaa;
+cursor:pointer;
+transition:0.25s;
+}
+
+.tab.active{
+background:linear-gradient(90deg,#6a5cff,#9d7bff);
+color:white;
+}
+
+.section{
+display:none;
+margin-top:25px;
+}
+
+.section.active{
+display:block;
+}
+
+.card{
+background:rgba(255,255,255,0.03);
+border:1px solid rgba(255,255,255,0.08);
+padding:22px;
+border-radius:20px;
+margin-bottom:20px;
+backdrop-filter:blur(10px);
+}
+
+.button{
+display:block;
+padding:18px;
+border-radius:16px;
+text-align:center;
+font-weight:bold;
+text-decoration:none;
+margin-top:12px;
+color:white;
+transition:0.25s;
+}
+
+.button:hover{
+transform:scale(1.03);
+}
+
+.green{background:linear-gradient(90deg,#1fbf7a,#2de4a8);}
+.blue{background:linear-gradient(90deg,#4b7bff,#6aa4ff);}
+.android{background:linear-gradient(90deg,#1fa24c,#39d76c);}
+.purple{background:linear-gradient(90deg,#7a5cff,#9c7bff);}
+
+.step{
+display:flex;
+margin:10px 0;
+}
+
+.circle{
+width:28px;
+height:28px;
+border-radius:50%;
+background:#7a5cff;
+display:flex;
+align-items:center;
+justify-content:center;
+margin-right:10px;
+font-size:14px;
+}
+
+.notice{
+background:#07281f;
+border:1px solid #1f7a5c;
+padding:16px;
+border-radius:16px;
+margin-bottom:20px;
+color:#9cf2cf;
+}
+
+.footer{
+text-align:center;
+margin-top:40px;
+color:#aaa;
+}
+
+.footer a{
+color:#9c7bff;
+margin:0 8px;
+text-decoration:none;
+}
+
+.domain{
+margin-top:15px;
+display:inline-block;
+background:#101020;
+padding:10px 20px;
+border-radius:30px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<div class="logo">🛡 VPN SIÊU CẤP</div>
+<h1>Hướng dẫn sử dụng</h1>
+<p>Tất cả những gì bạn cần để dùng VPN hiệu quả</p>
+</div>
+
+<div class="tabs">
+<div class="tab active" data-tab="0">🛒 Mua Gói</div>
+<div class="tab" data-tab="1">📥 Tải App</div>
+<div class="tab" data-tab="2">⚙️ Cài đặt</div>
+</div>
+
+<div class="section active">
+
+<div class="card">
+<h3>Mua gói tại website chính thức</h3>
+<p>Truy cập website để xem các gói VPN.</p>
+
+<a class="button purple" href="https://vpnsieucap.com" target="_blank">
+🌐 vpnsieucap.com
+</a>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="notice">
+✅ Hướng dẫn dành cho gói <b>Viettel 0Đ</b> – không cần Nền TikTok.
+</div>
+
+<div class="card">
+
+<h2>🍎 iOS — iPhone & iPad</h2>
+
+<p>Cách 1 – Tải trực tiếp từ App Store</p>
+
+<a class="button green" href="#">
+ Tải trên App Store
+</a>
+
+<h3 style="margin-top:20px">Cách 2 – TestFlight</h3>
+
+<div class="step"><div class="circle">1</div><div>Tải TestFlight</div></div>
+<div class="step"><div class="circle">2</div><div>Mở link cài app</div></div>
+<div class="step"><div class="circle">3</div><div>Bấm Install</div></div>
+
+<a class="button blue" href="#">⬇ Bước 1: Tải TestFlight</a>
+<a class="button green" href="#">⬇ Bước 2: Mở link cài app</a>
+
+</div>
+
+<div class="card">
+
+<h2>🤖 Android</h2>
+
+<p>Cách 1 – Tải từ CH Play</p>
+
+<a class="button android" href="#">
+⬇ Tải trên CH Play
+</a>
+
+<h3 style="margin-top:20px">Cách 2 – APK</h3>
+
+<div class="step"><div class="circle">1</div><div>Tải file APK</div></div>
+<div class="step"><div class="circle">2</div><div>Mở file → Cài đặt</div></div>
+
+<a class="button android" href="#">
+⬇ Tải APK Android
+</a>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="card">
+<h3>Cài đặt VPN</h3>
+<p>Sau khi tải app hãy đăng nhập tài khoản và bật VPN để sử dụng.</p>
+
+<a class="button purple" href="#">
+Xem video hướng dẫn
+</a>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+<p>VPN Siêu Cấp © 2026 — Hỗ trợ 24/7</p>
+
+<a href="#">Cộng đồng</a>
+<a href="#">Video hướng dẫn</a>
+
+<div class="domain">
+vpnsieucap
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+const tabs = document.querySelectorAll(".tab");
+const sections = document.querySelectorAll(".section");
+
+tabs.forEach(tab=>{
+tab.addEventListener("click",()=>{
+
+tabs.forEach(t=>t.classList.remove("active"));
+sections.forEach(s=>s.classList.remove("active"));
+
+tab.classList.add("active");
+sections[tab.dataset.tab].classList.add("active");
+
+});
+});
+
+</script>
+
+</body>
+</html>
