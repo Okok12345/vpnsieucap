@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -7,23 +6,28 @@
 <title>VPN Siêu Cấp</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;
+font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto;
 }
 
 body{
-background:radial-gradient(circle at top,#1a0d3d,#05030b);
+background:linear-gradient(180deg,#120a2f,#04020a);
 color:white;
 padding:20px;
 }
+
+/* container */
 
 .container{
 max-width:520px;
 margin:auto;
 }
+
+/* header */
 
 .header{
 text-align:center;
@@ -32,25 +36,28 @@ margin-bottom:25px;
 
 .logo{
 display:inline-block;
-padding:10px 22px;
-border-radius:40px;
-background:linear-gradient(90deg,#6a5cff,#9d7bff);
+padding:12px 24px;
+border-radius:50px;
+background:linear-gradient(135deg,#7c5cff,#a48bff);
 font-weight:bold;
-}
-
-.header h1{
-margin-top:14px;
-font-size:28px;
-}
-
-.header p{
-color:#aaa;
 font-size:14px;
 }
 
+.header h1{
+margin-top:15px;
+font-size:26px;
+}
+
+.header p{
+color:#9a9ab3;
+font-size:14px;
+}
+
+/* tabs */
+
 .tabs{
 display:flex;
-background:#111024;
+background:#0e0c1d;
 border-radius:40px;
 padding:6px;
 margin-top:20px;
@@ -61,15 +68,17 @@ flex:1;
 padding:12px;
 text-align:center;
 border-radius:30px;
-color:#aaa;
 cursor:pointer;
-transition:0.25s;
+color:#888;
+transition:.25s;
 }
 
 .tab.active{
-background:linear-gradient(90deg,#6a5cff,#9d7bff);
+background:linear-gradient(90deg,#7c5cff,#a48bff);
 color:white;
 }
+
+/* sections */
 
 .section{
 display:none;
@@ -80,35 +89,60 @@ margin-top:25px;
 display:block;
 }
 
+/* cards */
+
 .card{
-background:rgba(255,255,255,0.03);
-border:1px solid rgba(255,255,255,0.08);
-padding:22px;
+background:#0c0a18;
 border-radius:20px;
-margin-bottom:20px;
-backdrop-filter:blur(10px);
+padding:22px;
+margin-bottom:18px;
+border:1px solid rgba(255,255,255,0.05);
 }
+
+.notice{
+background:#0c2c23;
+border:1px solid #2a7c6b;
+padding:15px;
+border-radius:14px;
+margin-bottom:20px;
+color:#a8f5d6;
+}
+
+/* buttons */
 
 .button{
 display:block;
-padding:18px;
-border-radius:16px;
+padding:16px;
+border-radius:14px;
 text-align:center;
 font-weight:bold;
 text-decoration:none;
-margin-top:12px;
+margin-top:10px;
 color:white;
-transition:0.25s;
+transition:.2s;
 }
 
 .button:hover{
 transform:scale(1.03);
 }
 
-.green{background:linear-gradient(90deg,#1fbf7a,#2de4a8);}
-.blue{background:linear-gradient(90deg,#4b7bff,#6aa4ff);}
-.android{background:linear-gradient(90deg,#1fa24c,#39d76c);}
-.purple{background:linear-gradient(90deg,#7a5cff,#9c7bff);}
+.btn-ios{
+background:linear-gradient(90deg,#3ddc97,#2bc9ff);
+}
+
+.btn-test{
+background:linear-gradient(90deg,#4b7bff,#7aa8ff);
+}
+
+.btn-android{
+background:linear-gradient(90deg,#28c76f,#44e88e);
+}
+
+.btn-main{
+background:linear-gradient(90deg,#7c5cff,#a48bff);
+}
+
+/* steps */
 
 .step{
 display:flex;
@@ -116,45 +150,33 @@ margin:10px 0;
 }
 
 .circle{
-width:28px;
-height:28px;
+width:26px;
+height:26px;
 border-radius:50%;
-background:#7a5cff;
+background:#7c5cff;
 display:flex;
 align-items:center;
 justify-content:center;
 margin-right:10px;
-font-size:14px;
+font-size:13px;
 }
 
-.notice{
-background:#07281f;
-border:1px solid #1f7a5c;
-padding:16px;
-border-radius:16px;
-margin-bottom:20px;
-color:#9cf2cf;
-}
+/* footer */
 
 .footer{
 text-align:center;
 margin-top:40px;
-color:#aaa;
-}
-
-.footer a{
-color:#9c7bff;
-margin:0 8px;
-text-decoration:none;
+color:#888;
 }
 
 .domain{
-margin-top:15px;
-display:inline-block;
-background:#101020;
-padding:10px 20px;
+margin-top:10px;
+background:#0f0d20;
+padding:10px 18px;
 border-radius:30px;
+display:inline-block;
 }
+
 </style>
 </head>
 
@@ -165,7 +187,7 @@ border-radius:30px;
 <div class="header">
 <div class="logo">🛡 VPN SIÊU CẤP</div>
 <h1>Hướng dẫn sử dụng</h1>
-<p>Tất cả những gì bạn cần để dùng VPN hiệu quả</p>
+<p>Tất cả những gì bạn cần để dùng VPN</p>
 </div>
 
 <div class="tabs">
@@ -174,44 +196,47 @@ border-radius:30px;
 <div class="tab" data-tab="2">⚙️ Cài đặt</div>
 </div>
 
+<!-- mua goi -->
+
 <div class="section active">
 
 <div class="card">
-<h3>Mua gói tại website chính thức</h3>
+
+<h3>Mua gói tại website</h3>
 <p>Truy cập website để xem các gói VPN.</p>
 
-<a class="button purple" href="https://vpnsieucap.com" target="_blank">
-🌐 vpnsieucap.com
+<a class="button btn-main">
+🌐 vpnsieucap
 </a>
 
 </div>
 
 </div>
+
+<!-- tai app -->
 
 <div class="section">
 
 <div class="notice">
-✅ Hướng dẫn dành cho gói <b>Viettel 0Đ</b> – không cần Nền TikTok.
+✅ Hướng dẫn dành cho gói Viettel 0Đ – không cần nền TikTok
 </div>
 
 <div class="card">
 
-<h2>🍎 iOS — iPhone & iPad</h2>
+<h2>🍎 iOS</h2>
 
-<p>Cách 1 – Tải trực tiếp từ App Store</p>
-
-<a class="button green" href="#">
+<a class="button btn-ios">
  Tải trên App Store
 </a>
 
-<h3 style="margin-top:20px">Cách 2 – TestFlight</h3>
+<h3 style="margin-top:20px">TestFlight</h3>
 
 <div class="step"><div class="circle">1</div><div>Tải TestFlight</div></div>
 <div class="step"><div class="circle">2</div><div>Mở link cài app</div></div>
-<div class="step"><div class="circle">3</div><div>Bấm Install</div></div>
+<div class="step"><div class="circle">3</div><div>Install</div></div>
 
-<a class="button blue" href="#">⬇ Bước 1: Tải TestFlight</a>
-<a class="button green" href="#">⬇ Bước 2: Mở link cài app</a>
+<a class="button btn-test">⬇ Tải TestFlight</a>
+<a class="button btn-ios">⬇ Mở link cài app</a>
 
 </div>
 
@@ -219,32 +244,33 @@ border-radius:30px;
 
 <h2>🤖 Android</h2>
 
-<p>Cách 1 – Tải từ CH Play</p>
-
-<a class="button android" href="#">
+<a class="button btn-android">
 ⬇ Tải trên CH Play
 </a>
 
-<h3 style="margin-top:20px">Cách 2 – APK</h3>
+<h3 style="margin-top:20px">APK</h3>
 
 <div class="step"><div class="circle">1</div><div>Tải file APK</div></div>
-<div class="step"><div class="circle">2</div><div>Mở file → Cài đặt</div></div>
+<div class="step"><div class="circle">2</div><div>Cài đặt</div></div>
 
-<a class="button android" href="#">
-⬇ Tải APK Android
+<a class="button btn-android">
+⬇ Tải APK
 </a>
 
 </div>
 
 </div>
+
+<!-- cai dat -->
 
 <div class="section">
 
 <div class="card">
-<h3>Cài đặt VPN</h3>
-<p>Sau khi tải app hãy đăng nhập tài khoản và bật VPN để sử dụng.</p>
 
-<a class="button purple" href="#">
+<h3>Cài đặt VPN</h3>
+<p>Đăng nhập tài khoản và bật VPN để sử dụng.</p>
+
+<a class="button btn-main">
 Xem video hướng dẫn
 </a>
 
@@ -253,11 +279,7 @@ Xem video hướng dẫn
 </div>
 
 <div class="footer">
-
-<p>VPN Siêu Cấp © 2026 — Hỗ trợ 24/7</p>
-
-<a href="#">Cộng đồng</a>
-<a href="#">Video hướng dẫn</a>
+<p>VPN Siêu Cấp © 2026</p>
 
 <div class="domain">
 vpnsieucap
@@ -269,20 +291,20 @@ vpnsieucap
 
 <script>
 
-const tabs = document.querySelectorAll(".tab");
-const sections = document.querySelectorAll(".section");
+const tabs=document.querySelectorAll(".tab")
+const sections=document.querySelectorAll(".section")
 
 tabs.forEach(tab=>{
-tab.addEventListener("click",()=>{
+tab.onclick=()=>{
 
-tabs.forEach(t=>t.classList.remove("active"));
-sections.forEach(s=>s.classList.remove("active"));
+tabs.forEach(t=>t.classList.remove("active"))
+sections.forEach(s=>s.classList.remove("active"))
 
-tab.classList.add("active");
-sections[tab.dataset.tab].classList.add("active");
+tab.classList.add("active")
+sections[tab.dataset.tab].classList.add("active")
 
-});
-});
+}
+})
 
 </script>
 
